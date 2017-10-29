@@ -12,7 +12,7 @@ fi
 
 #Check if web user matches the running as user, Centos cannot use the -u flag without further configuration
 if [ $web_server_user == $running_as ] ; then
-    crontab_user_arg = ""
+    crontab_user_arg=""
 else
     crontab_user_arg="-u $web_server_user"
 fi;
